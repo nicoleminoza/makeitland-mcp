@@ -2,22 +2,22 @@
 > makeitland-mcp@0.1.0 test
 > tsc -p . && node --test dist/paths.test.js
 
-✔ isPathAllowed: allows root-level HTML pages (0.914208ms)
-✔ isPathAllowed: allows llms.txt and sitemap.xml (0.046541ms)
-✔ isPathAllowed: allows work/, writing/, how-institutions-behave/ (0.064917ms)
-✔ isPathAllowed: denies anything under for/ (0.039417ms)
-✔ isPathAllowed: denies traversal segments (0.03725ms)
-✔ isPathAllowed: denies non-HTML root files beyond allowlist (0.029416ms)
-✔ isPathAllowed: denies assets and other subdirs (0.04ms)
-✔ isPathAllowed: denies deeply nested paths in allowed subdirs (0.037542ms)
-✔ isPathAllowed: rejects null bytes and empty segments (0.032792ms)
-✔ resolveAllowed: resolves allowed files (1.491292ms)
-✔ resolveAllowed: refuses for/ with ForbiddenPathError (0.899125ms)
-✔ resolveAllowed: refuses traversal with ForbiddenPathError (0.932083ms)
-✔ resolveAllowed: refuses non-allowlisted files (1.2455ms)
-✔ resolveAllowed: refuses symlink escape via for/ (0.892542ms)
-✔ resolveAllowed: refuses symlink escape outside site root (1.272875ms)
-✔ resolveAllowed: refuses nested html inside allowed subdir (0.9545ms)
+✔ isPathAllowed: allows root-level HTML pages (0.589833ms)
+✔ isPathAllowed: allows llms.txt and sitemap.xml (0.039916ms)
+✔ isPathAllowed: allows work/, writing/, how-institutions-behave/ (0.053916ms)
+✔ isPathAllowed: denies anything under for/ (0.037292ms)
+✔ isPathAllowed: denies traversal segments (0.034583ms)
+✔ isPathAllowed: denies non-HTML root files beyond allowlist (0.029167ms)
+✔ isPathAllowed: denies assets and other subdirs (0.048583ms)
+✔ isPathAllowed: denies deeply nested paths in allowed subdirs (0.031625ms)
+✔ isPathAllowed: rejects null bytes and empty segments (0.032333ms)
+✔ resolveAllowed: resolves allowed files (3.892792ms)
+✔ resolveAllowed: refuses for/ with ForbiddenPathError (1.166125ms)
+✔ resolveAllowed: refuses traversal with ForbiddenPathError (1.125209ms)
+✔ resolveAllowed: refuses non-allowlisted files (1.100125ms)
+✔ resolveAllowed: refuses symlink escape via for/ (1.116667ms)
+✔ resolveAllowed: refuses symlink escape outside site root (1.23ms)
+✔ resolveAllowed: refuses nested html inside allowed subdir (0.901583ms)
 ℹ tests 16
 ℹ suites 0
 ℹ pass 16
@@ -25,4 +25,4 @@
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 37.8745
+ℹ duration_ms 41.704917
