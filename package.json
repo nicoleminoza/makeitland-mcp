@@ -1,0 +1,24 @@
+{
+  "name": "makeitland-mcp",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local MCP server that answers questions about the Make It Land site from read-only local files.",
+  "type": "module",
+  "bin": {
+    "makeitland-mcp": "dist/server.js"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "node dist/server.js",
+    "test": "tsc -p . && node --test dist/paths.test.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "cheerio": "^1.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3"
+  }
+}
